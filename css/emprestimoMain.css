@@ -1,0 +1,10 @@
+
+.mainEmprestimo{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+    gap: 3%;
+}

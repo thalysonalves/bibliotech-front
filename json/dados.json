@@ -1,0 +1,29 @@
+{
+    "emprestimos": [
+     {
+      "nomeDoLivro": "Extraordinário",
+      "tomboDoLivro": "01",
+      "aluno": "Assis",
+      "turmaDoAluno": "Professores",
+      "serieDoAluno": "4",
+      "status": "1" 
+     },
+     {
+      "nomeDoLivro": "noite",
+      "tomboDoLivro": "23",
+      "aluno": "Gustavo",
+      "turmaDoAluno": "infor",
+      "serieDoAluno": "3",
+      "status": "2"
+     },
+     {
+      "nomeDoLivro": "dia",
+      "tomboDoLivro": "31",
+      "aluno": "Alexandre",
+      "turmaDoAluno": "infor",
+      "serieDoAluno": "3",
+      "status": "1"
+     }
+    ]
+   }
+   

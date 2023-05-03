@@ -1,0 +1,24 @@
+{
+    "alunosGerais": [
+     {
+      "nomeDoAluno": "Gustavo",
+      "serie": "3",
+      "turma": "informática"
+     },
+     {
+        "nomeDoAluno": "juca",
+        "serie": "3",
+        "turma": "informática"
+       },
+       {
+        "nomeDoAluno": "joao",
+        "serie": "3",
+        "turma": "informática"
+       },
+       {
+        "nomeDoAluno": "silva",
+        "serie": "3",
+        "turma": "informática"
+       }
+    ]
+   }

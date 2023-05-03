@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url("acervo.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --corFiltroPendente: #662bff;
+    --corFiltroEmprestado: #ff15fc;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #242529;
+}
+.aside{
+    height: 100vh;
+    width: 20vw;
+    box-shadow: -2px 3px 3px #fff;
+    display: flex;
+    flex-direction: column;
+}
+/* PARTE SUPERIOR ASIDE */
+.aside .parteSuperior{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.divImgLogo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgLogo{
+    height: 100px;
+    width: 100px;
+}
+.divPerfil{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+.imgPerfil{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+.divContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+}
+.divContent .btnMain{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    background-color: #242529;
+    color: #fff;
+    position: relative;
+    border: none;
+}
+.divContent .btnMain:focus{
+    background-color: #37393F;
+    color: #000;
+    outline: none;
+}
+.divContent .btnMain h5{
+    font-size: 137%;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.parteSuperior .icon{
+    width: 11.2%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+}
+/* PARTE INFERIOR ASIDE */
+
+
+
+/* PARTE MAIN */
+.main{
+    width: 80%;
+    height: 100vh;
+}
+/* MAIN INICIO */
+
+.mainInicio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+    gap: 3%;
+
+}
+.mainInicioSuperior{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: larger;
+    
+}
+.mainInicioSuperior h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.mainInicioCenter{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: #fff;
+    
+}
+.mainInicioCenter .balao{
+    border: solid 2px black;
+    height: 95%;
+    width: 25%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border: none;
+}
+
+#balao1{
+    background-color: #05704F;
+}
+#balao2{
+    background-color: #36383E;
+}
+#balao3{
+    background-color: #fff;
+    color: black;
+}
+.pTitle{
+    font-size: 1.5rem;
+    font-weight: 800;    
+}
+.pNum{
+    font-size: 5rem;
+    font-weight: 800;
+}
+.mainInicioInferior{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+}
+
+
+.conteudo{
+    width: 100%;
+    height: 100%;
+    /* max-width: 720px; */
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: #2b2b2b;
+    color: #fff;
+    /* height: 30vh; */
+    padding: 55px;
+    border-radius: 25px;
+}
+
+.conteudo i{
+    font-size: 1.1rem;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.topo input {
+    width: 85%;
+    height: 60px;    
+    padding: 0.8rem;
+    border-radius: 15px;
+    border: 1px solid #2b2b2b;
+    outline: none;
+    font-size: 1rem;
+    background: #191919;
+    color: #fff;
+}
+
+.topo button{
+    width: 10%;
+    border-radius: 13px;
+    border: 1px solid #2b2b2b;
+    background: #191919;
+    color: #fff;
+    transition: all 0.7s;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo button:hover{
+    background: #05704f;
+    cursor: pointer;
+}
+
+#listaTarefa{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 75%;
+    overflow-y: auto;
+}
+#listaTarefa::-webkit-scrollbar {
+    width: 2px;               /* width of the entire scrollbar */
+  }
+  
+  #listaTarefa::-webkit-scrollbar-track {
+    background: transparent;
+            /* color of the tracking area */
+  }
+  
+  #listaTarefa::-webkit-scrollbar-thumb {
+    background-color: #ccc;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: none;  /* creates padding around scroll thumb */
+  }
+#listaTarefa li{
+    width: 100%;
+    height: 60px;
+    padding: 2%;
+    background: #191919;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#listaTarefa li span{
+    width: 80%;
+}
+.btnAcao{
+    border-radius: 50px;
+    border: 1px solid #191919;
+    width: 3vw;
+    height: 48px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #2b2b2b;
+    color: #fff;
+    transition: all 0.7s;
+}
+
+.btnAcao:hover{
+    background: #05704f;
+}
+
+
+/* fim inicio */
+
+
+/* CSS MAIN HISTORICO */
+.mainHistorico{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+    
+}
+
+.mainHistoricoSuperior{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: flex-end;
+ height: 10%;
+ width: 100%;
+ color: #fff;
+}
+.mainHistoricoSuperior h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.mainHistoricoCenter{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+ height: 10%;
+ width: 100%;
+ color: #fff;
+}
+.divFiltroMenu{
+    padding: 2% 3%;
+    cursor: pointer;
+}
+.divFiltroMenu h4{
+    color: #fff;
+    font-size: 140%;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+#corFiltroPendente{
+    background: var(--corFiltroPendente);
+    width: 100%;
+    height: 4px;
+   }
+#corFiltroEmprestado{
+    background: var(--corFiltroEmprestado);
+    width: 100%;
+    height: 4px;
+   }
+   
+.mainHistoricoInferior{ 
+ height: 70%;
+ width: 100%;
+}
+
+
+.mainEmprestimo{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+.mainEmprestimo .mainEmprestimosLeft{
+    height: 80%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+    position: relative;
+}
+.mainEmprestimosLeft h3{
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+.formNovoEmprestimo{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+.divInputForm{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: left;
+    width: 100%;
+    height: 16%;
+    gap: 5px;
+}
+.divInputForm label{
+    font-size: 60%;
+    color: #fff;
+    font-weight: 900;
+}
+.divInputForm input{
+    width: 100%;
+    height: 60%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #2b2b2b;
+}
+.divInputFormDouble{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 16%;
+    gap: 2%;
+}
+.divInputFormDouble div{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: left;
+    width: 50%;
+    height: 100%;
+    gap: 5px;
+}
+.divInputFormDouble div label{
+    font-size: 60%;
+    color: #fff;
+    font-weight: 900;
+}
+.divInputFormDouble div select{
+    width: 100%;
+    height: 55%;
+    border: none;
+    border-radius: 5px;
+}
+.btnEnviarEmprestimo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 16%;
+}
+.btnConfirmeEmprestimo{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #242529;
+    height: 75%;
+    width: 55%;
+    color: #000;
+    font-size: larger;
+    background-color: #fff;
+    
+}
+.mainEmprestimo .mainEmprestimosRight{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.calendario{
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  }
+  .wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 22px 25px 8px;
+    height: 14%;
+    justify-content: space-between;
+  }
+  header .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    background-color: #aaa;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  header .icons p{
+    height: 100%;
+    width: 29%;
+    cursor: pointer;
+    color: #878787;
+    font-size: 97%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .current-date{
+    font-size: 120%;
+    font-weight: 500;
+    background-color: #05704f;
+    border-radius: 20px;
+    width: 42%;
+    padding: 0% 2%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .calendar{
+    padding: 20px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 20px;
+  }
+  .calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+  }
+  .calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+  }
+  .days li.inactive{
+    color: #aaa;
+    border-radius: 1px;
+  }
+  .days li.active{
+    color: #fff;
+  }
+  .days li.active::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 190%;
+    width: 60%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    background-color: #05704F;
+}
+  #btnConfiData img{
+    height: 85%;
+    width: 85%;
+    position: absolute;
+  }
